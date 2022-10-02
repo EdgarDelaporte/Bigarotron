@@ -92,19 +92,19 @@ case $(((ran%10)+1)) in
         phrase3=", et là y peut pas s'en empêcher tu vois,"
         ;;
     5)
-        phrase3=" et du coup il est un peu troublé donc par reflexe"
+        phrase3="et du coup il est un peu troublé donc par reflexe"
         ;;
     6)
-        phrase3=" et le mec tu vois ça fait longtemps qu'il a pas tiré son coup, il est un peu raide, donc"
+        phrase3="et le mec tu vois ça fait longtemps qu'il a pas tiré son coup, il est un peu raide, donc"
         ;;
     7)
-        phrase3=" et tout d'un coup il a vachement envie de chier et donc"
+        phrase3="et tout d'un coup il a vachement envie de chier et donc"
         ;;
     8) 
-        phrase3=" et le mec tu vois ça fait longtemps qu'il a pas tiré son coup, il est un peu raide, donc"
+        phrase3="et le mec tu vois ça fait longtemps qu'il a pas tiré son coup, il est un peu raide, donc"
         ;;
     9)
-        phrase3=" et comme ça fait un bout de temps qu'il s'est pas fait une pute,"
+        phrase3="et comme ça fait un bout de temps qu'il s'est pas fait une pute,"
         ;;
     10)
         phrase3=", et là le type y pète un plomb, y baisse son futal et"

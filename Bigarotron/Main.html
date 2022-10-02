@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Bigarotron</title>
+    <style>
+        body {
+            object-fit: contain;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url("https://media.gqmagazine.fr/photos/5c650b594a0794420bc696d2/16:9/w_2560%2Cc_limit/GettyImages-869530316.jpg");
+            background-color: #cccccc;
+            font-family: monospace;
+        }
+        .button-container-div {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        .joke {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        button {
+            background-color: crimson;
+            color: rgb(255, 255, 255);
+            border: 1px solid;
+            padding: 10px;
+            outline: none;
+            margin: auto;
+            height: 150px;
+            width: 200px;
+        }
+        span {
+            background-color: rgba(220, 20, 60, 0.55);
+            color: #fff;
+            padding: 10px;
+            outline: none;
+            margin: auto;
+            height: 80px;
+            width: 1500px;
+            text-align: center;
+        }
+    </style>
+
+    <script func = "text/javascript">
+        function GenerateJoke()
+        {
+            n = Math.random();
+
+            phrase1 = ["C'est un mec y rentre dans un bar, y command un double Whiskey,",
+                "C'est l'histoire d'un enculé qui va a la pisicne,",
+                "C'est un père de famille qui entre dans un bordel,",
+                "C'est un mec qui bouffe le cul d'une pute,",
+                "C'est l'histoire d'un fonctionnaire qui va au bois,",
+                "C'est l'histoire d'un zoophile qui arrive a Jardiland,",
+                "C'est un mec y va aux chiottes tu vois,",
+                "C'est un clodo qui se gratte le cul,",
+                "C'est un proxenete qui revient du bordel,",
+                "C'est l'histoire de mon pote qui va tromper sa femme,",
+                "C'est un député qui va à une partouze,",
+                "C'est un pédophile qui passe devant un orphelinat"
+            ]
+
+            phrase2 = ["et là y voit un clodo",
+                "et y voit un chien sur le trotoir",
+                "et à sa droite y'a un vieux en train de se branler",
+                "y croise une pute en train de se rincer la bouche",
+                "il retrouve son mac en train de se gratter les couilles",
+                "et y repere un pd qui encule une vache",
+                "y rencontre une portugaise en porte-jartelles",
+                "y voit le conducteur de bus qui rentre chez lui",
+                "et justement y'a sa belle-mère qui l'attend ici",
+                "et y voit sa fille en train de sucer un gendarme",
+            "et là le mec y voit une chauve-souris qu'essaye de monter à l'étage",
+            "et puis là y'a un gosse qui veut traverser la rue tu vois"]
+
+            phrase3 = [", du coup y s'approche par derrière et",
+                ", il est curieux le mec donc il avance pour voir et",
+                ", et là le mec y prend sa bite dans la main puis",
+                ", et là y peut pas s'en empêcher tu vois,",
+                "et du coup il est un peu troublé donc par reflexe",
+                "et le mec tu vois ça fait longtemps qu'il a pas tiré son coup, il est un peu raide, donc",
+                "et tout d'un coup il a vachement envie de chier et donc",
+                "et le mec tu vois ça fait longtemps qu'il a pas tiré son coup, il est un peu raide, donc",
+                "et comme ça fait un bout de temps qu'il s'est pas fait une pute,",
+                ", et là le type y pète un plomb, y baisse son futal et"
+            ]
+
+            phrase4 = ["SCHLAC !",
+                "MERDE !",
+                "FAIT CHIER !",
+                "VLAN !",
+                "PUTAIN !",
+                "PAF !",
+                "d'un bon coup sec,",
+                "sans hésiter,",
+                "comme tous les soirs,",
+                "pour se défouler un peu,",
+            "en gueulant un bon coup",
+            "après avoir pris une grande inspiration,",
+                "pour la première fois de sa vie,",
+            ]
+
+            phrase5 = ["il l'encule ! RA RA RA RA",
+                "il lui met un doigt dans le cul !",
+                "il se branle dessus !",
+                "il lui gerbe à la gueule !",
+                "y se chie dessus ! il en fout partout !",
+                "il lui suce la bite !",
+                "il lui pisse dans la bouche !",
+                "il prend son cul et il se mouche dedans !",
+                "y se coupe la bite et il lui fait bouffer !",
+                "il prend son bras et il lui enfonce dans le cul !",
+                "il lâche une énorme caisse !",
+                "il lui mord les couilles !"]
+
+            joke = phrase1[Math.floor(Math.random()*phrase1.length)] + " " +
+                phrase2[Math.floor(Math.random()*phrase2.length)] + " " +
+                phrase3[Math.floor(Math.random()*phrase3.length)] + " " +
+                phrase4[Math.floor(Math.random()*phrase4.length)] + " " +
+                phrase5[Math.floor(Math.random()*phrase5.length)]
+
+            document.getElementById("joke").innerHTML = joke;
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="joke">
+    <span id="joke"; style="font-size : 22px";>
+
+    </span>
+</div>
+
+<div class="button-container-div">
+    <button id="BT1"; style="font-size : 30px"; onclick="GenerateJoke()">
+        Génèrer une Bigarie</button>
+</div>
+
+</body>
+</html>
